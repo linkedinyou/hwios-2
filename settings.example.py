@@ -28,8 +28,6 @@ USE_I18N = True
 USE_L10N = True
 MEDIA_ROOT = ''
 MEDIA_URL = ''
-STATIC_ROOT = '/home/gww/Private/projects/django-ws/django-ws-project/static'
-STATIC_URL = 'http://localhost:8666/static/'
 ADMIN_MEDIA_PREFIX = '/static/admin/'
 STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.FileSystemFinder',
