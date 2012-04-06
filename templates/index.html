@@ -2,7 +2,28 @@
 {%block css%}
     {{css.super}}
     <link type='text/css' href='/media/css/bootstrap.css' media='screen' rel='stylesheet' />
+    <link type='text/css' href='/media/css/style.css' media='screen' rel='stylesheet' />
+    <link type='text/css' href='/media/css/chat.css' media='screen' rel='stylesheet' />
+    <link href='http://fonts.googleapis.com/css?family=Fredoka+One' rel='stylesheet' type='text/css'>
 {%endblock%}
-{%block sidebar%}
-    {% include "chat.html" %}
+{%block js%}
+<script src="http://localhost:8001/vogue-client.js"
+        type="text/javascript">
+</script>
 {%endblock%}
+{%block header%}
+<a id="dws-logo" href="#"></a>
+<ul class="menu" rel="sam1">
+<li class="active"><a href="#">Home</a></li>
+<li ><a href="#">Blog</a></li>
+<li><a href="#">Wiki</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+{%endblock%}
+{%block above_main%}
+{% include "chat.html" %}
+{%endblock%}
+{%block main%}
+
+{%endblock%}
+
