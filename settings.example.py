@@ -65,3 +65,14 @@ INSTALLED_APPS = (
     'dws.chat',
     'dws.blog',
 )
+
+DWS_MODULES = [
+    {'name':'modules/chat'},
+    {'name':'modules/blog'},
+]
+
+DWS_WURLS = [
+    {'module':'django-ws-project.urls'}
+]
+DWS_DEFAULT_WURL = '/blog/'
+DWS_WANIP = '123.123.123.123'
