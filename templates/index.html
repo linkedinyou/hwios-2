@@ -1,22 +1,42 @@
 {%extends "bootstrap.html" %}
 {%block css%}
-    {{css.super}}
     <link type='text/css' href='/media/css/bootstrap.css' media='screen' rel='stylesheet' />
-    <link type='text/css' href='/media/css/style.css' media='screen' rel='stylesheet' />
-    <link type='text/css' href='/media/css/chat.css' media='screen' rel='stylesheet' />
 {%endblock%}
-
+{%block js%}
+<script type='text/javascript' src='/media/js/bootstrap.js'></script>
+{%endblock%}
 {%block header%}
 <a id="dws-logo" href="#"></a>
-<ul class="menu" rel="sam1">
-<li class="active"><a href="#">Home</a></li>
-<li ><a href="#">Blog</a></li>
-<li><a href="#">Wiki</a></li>
-<li><a href="#">Contact</a></li>
-</ul>
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+    <div class="container">
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        </a>
+        <a class="brand" href="#">Django WS</a>
+        <div class="nav-collapse">
+        <ul class="nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">Blog</a></li>
+            <li><a href="#contact">Wiki</a></li>
+        </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+    </div>
+</div>
 {%endblock%}
 {%block above_main%}
-{% include "chat.html" %}
+<div class='container-fluid'>
+    <div class="row-fluid">
+        <div class='span3'>
+            {% include "chat.html" %}
+        </div>
+    
+    </div>
+</div>
+
 {%endblock%}
 {%block main%}
 
