@@ -5,7 +5,9 @@ from dws.core.views import BootstrapView
 
 urlpatterns = urls
 urlpatterns.extend(patterns('',
+        (r'^misc/', include('dws.misc.urls')),
         url(r'^', BootstrapView.as_view(template_name="index.html")),
+        
 ))
 
 
