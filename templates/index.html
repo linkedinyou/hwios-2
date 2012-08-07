@@ -2,12 +2,14 @@
 {%block css%}
     <link type='text/css' href='/media/css/bootstrap.min.css' media='screen' rel='stylesheet' />
     <link type='text/css' href='/media/css/style.css' media='screen' rel='stylesheet' />
+    <link type='text/css' href='/media/css/core.css' media='screen' rel='stylesheet' />
     <link type='text/css' href='/media/css/misc.css' media='screen' rel='stylesheet' />
     <link type='text/css' href='/media/css/chat.css' media='screen' rel='stylesheet' />
     <link type='text/css' href='/media/css/bootstrap-responsive.min.css' media='screen' rel='stylesheet' />
 {%endblock%}
 {%block js%}
-<script type='text/javascript' src='/media/js/bootstrap.js'></script>
+    <script type='text/javascript' src='/media/js/bootstrap.js'></script>
+    <script type='text/javascript' src='http://localhost:8001:/client.js'></script>
 {%endblock%}
 {%block header%}
 <a id="dws-logo" href="#"></a>
@@ -47,5 +49,5 @@
         </div>
     </div> 
 </div>
-
+<div id='growl'></div>
 {%endblock%}
